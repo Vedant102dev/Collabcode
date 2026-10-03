@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.CodeMirror {
+  min-height: 65vh;
+  width: calc(100vw - 150px);
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 8px;
+}
+
+body {
+  background: #0f172a;
+}
+
+.messageBox {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  text-align: left;
+  border-radius: 12px;
+  padding: 4px 12px;
+  color: white;
+  display: inline-block;
+  max-width: 50%;
+  min-width: 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.backgroundBlue {
+  word-wrap: break-word;
+  background: #4f46e5;
+  border-top-right-radius: 0px;
+}
+
+.backgroundLight {
+  background: #334155;
+  border-top-left-radius: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .CodeMirror {
+    height: 100vh;
+    width: calc(100vw - 350px);
+    font-size: 14px;
+    line-height: 1.6;
+    padding-top: 8px;
+  }
+}
